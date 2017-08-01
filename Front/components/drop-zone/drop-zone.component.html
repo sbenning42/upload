@@ -1,0 +1,11 @@
+
+<form class="form-inline" role="form" enctype="multipart/from-data">
+  <div class="form-group">
+    <label class="btn btn-default btn-file" for="browse">Browse<input type="file" id="browse" name="file" (change)="selectFile($event)"></label>
+    <label class="sr-only" for="fileName">File name</label>
+    <input type="text" class="form-control" id="fileName" name="fileName" placeholder="Enter a file name" [(ngModel)]="fileName">
+    <button type="submit" class="btn btn-primary" [disabled]="!isFile" (click)="upload()">Upload</button>
+  </div>
+</form>
+
+
