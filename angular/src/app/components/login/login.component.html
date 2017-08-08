@@ -1,0 +1,11 @@
+<form class="example-form" novalidate (ngSubmit)="login()" [formGroup]="loginForm">
+  <p>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="email"  class="form-control" formControlName="email" [(ngModel)]="user.email">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input type="password" mdInput placeholder="Password" class="form-control" formControlName="password" [(ngModel)]="user.password">
+    </md-input-container>
+  </p>
+  <button md-raised-button color="primary">Login</button>
+</form>

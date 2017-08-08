@@ -1,0 +1,18 @@
+<md-card class="example-card col-md-4">
+  <md-card-header>
+    <div md-card-avatar class="example-header-image" [ngStyle]="{'background-image': 'url(' + userPicture.public_path + ')'}"></div>
+    <md-card-title>{{ product.name }}</md-card-title>
+    <md-card-subtitle>{{ product.designer_id }}, {{ product.brand_id }}</md-card-subtitle>
+    <md-card-subtitle>{{ user.name }}, {{ user.email }}</md-card-subtitle>
+  </md-card-header>
+  <img md-card-image src="{{ productPicture.public_path }}">
+  <md-card-content>
+    <p>
+      {{ product.description }}
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <!--button md-button>LIKE</button>
+    <button md-button>SHARE</button-->
+  </md-card-actions>
+</md-card>
