@@ -1,0 +1,28 @@
+/* Structure */
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-width: 300px;
+}
+
+.mat-sort-header-container {
+    align-items: center;
+}
+
+.mat-sort-header {
+    align-items: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.show_price {
+    border-top: 1px solid #666666;
+}

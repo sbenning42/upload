@@ -1,0 +1,14 @@
+<md-sidenav-container class="example-container">
+    <md-sidenav #sidenav class="example-sidenav">
+        Jolly good!
+    </md-sidenav>
+    <div class="sidenav-content">
+        <app-header (sidenavEvent)="sidenav.open()" (homeEvent)="homePage()" (userPageEvent)="userPage()" (contactPageEvent)="contactPage()"></app-header>
+        <div class="body">
+            <app-home-page *ngIf="!userPageFlag && !contactPageFlag"></app-home-page>
+            <app-user-page *ngIf="userPageFlag"></app-user-page>
+            <app-contact-page *ngIf="contactPageFlag"></app-contact-page>
+        </div>
+        <app-footer></app-footer>
+    </div>
+</md-sidenav-container>
